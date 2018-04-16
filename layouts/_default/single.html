@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head" . }}
+
+<body>
+    <div class="container">
+        <article>
+            <header>
+                <h1>{{ .Title }}</h1>
+                <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+            </header>
+            <section>
+                {{ .Content }}
+            </section>
+        </article>
+        <h4>
+            <a href="{{ .Site.BaseURL }}">Home</a>
+        </h4>
+    </div>
+</body>
+
+</html>

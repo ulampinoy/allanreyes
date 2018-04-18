@@ -3,44 +3,46 @@
 
 {{ partial "head" . }}
 
-<body class="home">
-    <div class="container">
+<body>
+    <main>
         <header>
             <img src="/images/ar-logo-white.svg" alt="">
-            <h1>¡Hola! I'm Allan Reyes</h1>
+            <h1>Allan Reyes</h1>
             <h3>I am a designer and an enthusiast.</h3>
-            <p>I make handcrafted digital user-interfaces mostly for web browsers and mobile devices.</p>
+            <p>I make hand-crafted digital user-interfaces mostly for web browsers and mobile devices.</p>
         </header>
-        <main>
+        <section class="recent-works">
+            <article>
 
-            <section class="latest-posts">
-                {{ range first 8 (where .Data.Pages "Type" "posts") }}
-                <article>
-                    <a href="{{ .RelPermalink }}">
-                        <img src="images/{{ .Params.thumbnail }}" alt="">
-                    </a>
-
-                    <h1>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h1>
-                    <p class="excerpt">
-                        {{ .Params.excerpt }}
-                    </p>
-                </article>
-                {{ end }}
-            </section>
-
-            <section class="photo-stream">
-                {{ range first 8 (where .Data.Pages "Type" "photos") }}
-                <article>
-                    <h1>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h1>
+            </article>
+        </section>
+        <section class="latest-posts">
+            {{ range first 8 (where .Data.Pages "Type" "posts") }}
+            <article>
+                <a href="{{ .RelPermalink }}">
                     <img src="images/{{ .Params.thumbnail }}" alt="">
-                </article>
-                {{ end }}
-            </section>
-        </main>
+                </a>
+
+                <h2>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+                <p class="excerpt">
+                    {{ .Params.excerpt }}
+                </p>
+            </article>
+            {{ end }}
+        </section>
+        <section class="photo-stream">
+            {{ range first 8 (where .Data.Pages "Type" "photos") }}
+            <article>
+                <h1>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h1>
+                <img src="images/{{ .Params.thumbnail }}" alt="">
+            </article>
+            {{ end }}
+        </section>
+    </main>
     </div>
 </body>
 

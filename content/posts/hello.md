@@ -7,6 +7,8 @@ thumbnail: venice-01.jpg
 
 
 ![Venice building facade painted with yellow](/images/venice-01.jpg)
-Hello, :)
 
-![Fishmonger in Mercado de Maravilla](/images/fishmonger-maravillas.jpg)
+Hello, thanks for dropping by :)
+The site is under going an overhaul. Check back soon.
+
+Thank you!

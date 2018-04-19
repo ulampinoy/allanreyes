@@ -4,20 +4,19 @@
 {{ partial "head" . }}
 
 <body>
-    <div class="container">
+    <main class="post">
         <article>
             <header>
                 <h1>{{ .Title }}</h1>
-                <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
             </header>
             <section>
                 {{ .Content }}
             </section>
+            <footer>
+                <a href="{{ .Site.BaseURL }}">Go back home</a>
+            </footer>
         </article>
-        <h4>
-            <a href="{{ .Site.BaseURL }}">Home</a>
-        </h4>
-    </div>
+    </main>
 </body>
 
 </html>

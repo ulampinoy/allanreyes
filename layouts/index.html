@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {{ partial "head" . }}
-
 <body>
     <main>
         <section>
@@ -19,7 +17,6 @@
                     <a href="{{ .RelPermalink }}">
                         <img src="images/{{ .Params.thumbnail }}" alt="">
                     </a>
-
                     <h2>
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </h2>
@@ -37,10 +34,10 @@
                 <h1>
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </h1>
-            </article>
+            </article> 
             {{ end }}
         </section>
+        {{ partial "footer" . }}
     </main>
 </body>
-
 </html>

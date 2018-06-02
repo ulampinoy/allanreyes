@@ -2,42 +2,32 @@
 <html lang="en">
 {{ partial "head" . }}
 <body>
-    <main>
-        <section>
-            <div class="intro">
+    <div class="Container">
+        <header class="whoami">
+            <div class="logo">
                 <img src="/images/ar-logo-white.svg" alt="">
-                <h1>Allan Reyes</h1>
-                <h3>I am a designer and an enthusiast.</h3>
-                <p>I make hand-crafted digital user-interfaces mostly for web browsers and mobile devices.</p>
             </div>
-            <div class="latest-posts">
-                <h4>What's New</h4>
-                {{ range first 8 (where .Data.Pages "Type" "posts") }}
+            <div>
+                <h1>Allan Reyes</h1>
+                <h3>Designer and enthusiast</h3>
+                <p>I make digital products at work and everything analog afterwards</p>
+            </div>
+        </header>
+        <main>
+            <div class="photo-stream">
+                {{ range first 8 (where .Data.Pages "Type" "photos") }}
                 <article>
-                    <a href="{{ .RelPermalink }}">
-                        <img src="images/{{ .Params.thumbnail }}" alt="">
-                    </a>
-                    <h2>
+                    <img src="images/{{ .Params.thumbnail }}" alt="">
+                    <h1>
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h2>
-                    <p class="excerpt">
-                        {{ .Params.excerpt }}
-                    </p>
-                </article>
+                    </h1>
+                </article> 
                 {{ end }}
             </div>
-        </section>
-        <section class="photo-stream">
-            {{ range first 8 (where .Data.Pages "Type" "photos") }}
-            <article>
-                <img src="images/{{ .Params.thumbnail }}" alt="">
-                <h1>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h1>
-            </article> 
-            {{ end }}
-        </section>
-        {{ partial "footer" . }}
-    </main>
+        </main>
+        <footer>
+            <p>Copyright © 2018 Allan Reyes.</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,33 +1,67 @@
 body {
-  background-color: #f5f1e1;
-  color: #111;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.4;
+    background-color: #f5f1e1;
+    color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.4;
 }
 
 a {
-  color: #404040;
-  font-weight: 600;
+    color: #404040;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #68b900;
+    color: #68b900;
+}
+
+h1, h2, h3 {
+    margin: .5rem 0;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .Container {
-  max-width: 1200px;
-  padding: 3rem;
-  margin: 0 auto;
+    max-width: 80vw;
+    padding: 3rem;
+    margin: 0 auto;
 }
 
 .whoami {
-  display: grid;
-  grid-template-columns: 8rem 1fr;
-  grid-gap: 3rem;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: .2rem solid rgba(0,0,0,0.05);
+}
+
+.Column {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gap-L {
+    grid-gap: 4.8rem;
+}
+
+.divide--64by36 {
+    grid-template-columns: .64fr .36fr;
+}
+
+.Card {
+    color: #303030;
+}
+
+.Card.Photo-albums h1 {
+    font-size: 1.2rem;
+}
+
+.Footer {
+    margin-top: 3rem;
+    padding: 1rem 0;
+    border-top: .2rem solid rgba(0,0,0,0.05);
 }

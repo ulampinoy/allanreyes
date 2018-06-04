@@ -26,10 +26,15 @@ img {
     padding: 3rem;
     margin: 0 auto;
 }
- 
+
 .whoami {
   display: grid;
   grid-template-columns: 8rem 1fr;
   grid-gap: 3rem;
   align-items: center;
+}
+
+.Column {
+  display: grid;
+  grid-template-columns: 1fr;
 }

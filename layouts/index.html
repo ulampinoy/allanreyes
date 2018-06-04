@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "head" . }}
+
 <body>
     <div class="Container">
-        <header class="whoami">
-            <div class="logo">
-                <img src="/images/ar-logo-white.svg" alt="">
-            </div>
+        <div class="Column divide--64by36 gap-L">
             <div>
-                <h1>Allan Reyes</h1>
-                <h3>Designer and enthusiast</h3>
-                <p>I make digital products at work and everything analog afterwards</p>
+                <header class="whoami gap-L">
+                    <div class="logo">
+                        <img src="/images/ar-logo-white.svg" alt="">
+                    </div>
+                    <div>
+                        <h1>Allan Reyes</h1>
+                        <h3>Designer and enthusiast</h3>
+                        <p>I am digital product designer, amateur photographer, tinker, and homecook.</p>
+                    </div>
+                </header>
+                <main>
+                    <div class="Card Blog-posts">
+                        {{ range first 8 (where .Data.Pages "Type" "posts") }}
+                        <article>
+                            <img src="images/{{ .Params.thumbnail }}" alt="">
+                            <h1>
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </h1>
+                        </article>
+                        {{ end }}
+                    </div>
+                </main>
             </div>
-        </header>
-        <main>
-            <div class="photo-stream">
+            <section class="Card Photo-albums">
                 {{ range first 8 (where .Data.Pages "Type" "photos") }}
                 <article>
                     <img src="images/{{ .Params.thumbnail }}" alt="">
                     <h1>
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </h1>
-                </article> 
+                </article>
                 {{ end }}
-            </div>
-        </main>
-        <footer>
+            </section>
+
+        </div>
+        <footer class="Footer">
             <p>Copyright © 2018 Allan Reyes.</p>
         </footer>
-    </div>
 </body>
+
 </html>

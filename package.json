@@ -1,0 +1,22 @@
+{
+  "name": "allanreyes",
+  "version": "1.0.0",
+  "description": "Online Portfolio of Allan Reyes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulampinoy/allanreyes.git"
+  },
+  "author": "Allan Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulampinoy/allanreyes/issues"
+  },
+  "homepage": "https://github.com/ulampinoy/allanreyes#readme"
+}

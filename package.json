@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "name": "allanrey-es",
+  "description": "Online Portfolio of Allan Reyes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --output-style compressed static/scss/main.scss static/main.css",
+    "watch:css": "yarn css -watch"
+  },
+  "repository": "git+https://github.com/ulampinoy/allanreyes.git",
+  "author": "Allan Reyes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulampinoy/allanreyes/issues"
+  },
+  "homepage": "https://github.com/ulampinoy/allanreyes#readme"
+}

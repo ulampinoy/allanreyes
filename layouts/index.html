@@ -2,32 +2,26 @@
 <html lang="en">
 {{ partial "head" . }}
 <body>
-    <div class="Container">
-        <header class="whoami">
-            <div class="logo">
-                <img src="/images/ar-logo-white.svg" alt="">
-            </div>
-            <div>
-                <h1>Allan Reyes</h1>
-                <h3>Designer and enthusiast</h3>
-                <p>I make digital products at work and everything analog afterwards</p>
-            </div>
-        </header>
-        <main>
-            <div class="photo-stream">
-                {{ range first 8 (where .Data.Pages "Type" "photos") }}
-                <article>
-                    <img src="images/{{ .Params.thumbnail }}" alt="">
-                    <h1>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h1>
-                </article> 
-                {{ end }}
-            </div>
-        </main>
-        <footer>
-            <p>Copyright © 2018 Allan Reyes.</p>
-        </footer>
-    </div>
+    <header>
+        <img src="/images/ar-logo-white.svg" alt="">
+        <hgroup>
+            <h1>Allan Reyes</h1>
+            <h2>Designer and enthusiast</h2>
+        </hgroup>
+    </header>
+    <main>
+            {{ range first 8 (where .Data.Pages "Type" "photos") }}
+            <article>
+                <img src="images/{{ .Params.thumbnail }}" alt="">
+                <h1>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h1>
+            </article>
+            {{ end }}
+    </main>
+    <footer>
+        <p>Copyright © 2018 Allan Reyes.</p>
+    </footer>
 </body>
+
 </html>

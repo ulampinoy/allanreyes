@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "head" . }}
+
 <body>
     <header>
         <img src="/images/ar-logo-white.svg" alt="">
         <hgroup>
             <h1>Allan Reyes</h1>
-            <h2>Designer and enthusiast</h2>
+            <h3>Designer
+                <span>&</span> enthusiast</h3>
         </hgroup>
     </header>
-    <main>
-            {{ range first 8 (where .Data.Pages "Type" "photos") }}
-            <article>
+    <nav>
+        <ol>
+            {{ range first 8 (where .Data.Pages "Type" "posts") }}
+            <li>
                 <img src="images/{{ .Params.thumbnail }}" alt="">
-                <h1>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h1>
-            </article>
+                <hgroup>
+                    <h2>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    <h4>
+                        {{ .Params.excerpt }}
+                    </h4>
+                </div>
+            </li>
             {{ end }}
-    </main>
+        </ol>
+    </nav>
+    <main></main>
     <footer>
         <p>Copyright © 2018 Allan Reyes.</p>
     </footer>

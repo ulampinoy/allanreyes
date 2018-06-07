@@ -9,6 +9,6 @@ thumbnail: venice-01.jpg
 ![Venice building facade painted with yellow](/images/venice-01.jpg)
 
 Hello, thanks for dropping by :)
-The site is under going an overhaul. Check back soon.
+My site is now going through an overhaul. Check back soon ;)
 
 Thank you!

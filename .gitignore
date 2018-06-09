@@ -4,6 +4,4 @@ node_modules/
 package-lock.json
 yarn.lock
 .vscode/*
-static/main.css
-static/scss/main.css
-static/scss/main.min.css
+

@@ -7,11 +7,13 @@
             <header>
                 <hgroup>
                     <h1>{{ .Title }}</h1>
-                    <h4>{{ with .GitInfo }}
-                            <a href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}">
-                            {{ .Hash }}
+                    <h4>
+                         {{ if .IsPage }}
+                            <a href="{{ $.Site.Params.GitHubRepo }}commit/{{ .GitInfo.Hash }}">
+                             {{ .GitInfo.Hash }}
                             </a>
-                        {{end }}
+                        {{ end }}
+                        </a>
                     </h4>
                 </hgroup>
                 <img src="/images/{{ .Params.photo }}" alt="">

@@ -3,4 +3,7 @@ languageCode = "en-us"
 title = "Allan Reyes — Designer and Enthusiast"
 enableGitInfo = true
 
-ghrepo = "https://github.com/ulampinoy/allanreyes/"
+[params]
+AuthorName = "Allan Reyes"
+GitHubUser = "ulampinoy"
+GitHubRepo = "https://github.com/ulampinoy/allanreyes/"

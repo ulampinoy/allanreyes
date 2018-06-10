@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 {{ partial "head" . }}
-
 <body>
     <main class="post">
         <article>
             <header>
-                <h1>{{ .Title }}</h1>
+                <hgroup>
+                    <h1>{{ .Title }}</h1>
+                    <h4>{{ with .GitInfo }}
+                            <a href="{{$.Site.Params.ghrepo}}/commit/{{ .Hash }}">
+                            {{ .Hash }}
+                            </a>
+                        {{end }}
+                    </h4>
+                </hgroup>
                 <img src="/images/{{ .Params.photo }}" alt="">
             </header>
             <section>
                 {{ .Content }}
+                <small>{{ .Title }} was last updated on {{ .Lastmod.Format "January 2, 2006" }}</small>
             </section>
             <footer>
                 <a href="{{ .Site.BaseURL }}">Go back home</a>
@@ -19,5 +26,4 @@
         </article>
     </main>
 </body>
-
 </html>

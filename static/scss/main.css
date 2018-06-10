@@ -71,8 +71,13 @@ h3 {
 }
 
 p {
-  font-size: .8rem;
-  margin: .5rem auto 1rem;
+  font-size: 0.8rem;
+  margin: 0.5rem auto 1rem;
+}
+
+small {
+  font-size: .5rem;
+  color: #777;
 }
 
 header {
@@ -84,7 +89,6 @@ header {
 
 header h1 {
   font-weight: 900;
-  line-height: 1;
 }
 
 header h3 {
@@ -117,6 +121,8 @@ nav ol > li hgroup {
 }
 
 main.post article section {
+  max-width: 1040px;
+  margin: 0 auto;
   padding: 2em;
 }
 
@@ -126,8 +132,18 @@ main.post header {
   padding: 0;
 }
 
-main.post header h1 {
-  padding: 1em;
+main.post header hgroup {
+  padding: 1.5em;
+}
+
+main.post header h4 {
+  display: block;
+  font-size: 0.4rem;
+  font-family: "Menlo", "Courier New", Courier, monospace;
+}
+
+main.post header h4 a {
+  color: #777;
 }
 
 main.post header img {
@@ -157,7 +173,7 @@ h2 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 a {

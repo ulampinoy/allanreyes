@@ -1,6 +1,5 @@
 baseURL = "https://allanrey.es/"
 languageCode = "en-us"
 title = "Allan Reyes — Designer and Enthusiast"
-enableGitInfo = true
 
 ghrepo = "https://github.com/ulampinoy/allanreyes/"

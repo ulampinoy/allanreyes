@@ -15,9 +15,10 @@
                 <small>{{ .Title }} was last updated on {{ .Lastmod.Format "January 2, 2006" }}</small>
             </section>
             <footer>
-                <a href="{{ .Site.BaseURL }}">Go back home</a>
+                <a href="{{ .Site.BaseURL }}">⇜ Go back home</a>
             </footer>
         </article>
     </main>
+    {{ partial "foot" . }}
 </body>
 </html>

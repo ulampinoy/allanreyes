@@ -6,7 +6,9 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -29,6 +31,8 @@ small {
 }
 
 header {
+  background-color: #68b900;
+  color: white;
   padding: 3em;
   text-align: center;
 
@@ -54,6 +58,10 @@ header {
     margin: 0 auto;
     width: 7em;
   }
+
+  &.poster {
+    background-color: black;
+  }
 }
 
 nav {
@@ -73,10 +81,10 @@ nav {
 main {
   &.post {
     article {
-      section {
+      section, footer {
         max-width: 1040px;
         margin: 0 auto;
-        padding: 2em;
+        padding: 1.5rem 3rem;
       }
     }
 
@@ -102,8 +110,9 @@ main {
       }
     }
 
-    footer a {
-      color: whitesmoke;
+    footer {
+      background-color: transparent;
+      text-align: left;
     }
   }
 }
@@ -111,9 +120,13 @@ main {
 footer {
   background-color: rgb(0, 17, 18);
   color: whitesmoke;
-  font-size: 0.6rem;
   padding: 1em;
   text-align: center;
+  margin-top: 1rem;
+  p {
+    font-size: 0.6rem;
+    margin: 0;
+  }
 }
 
 h1 {
@@ -160,8 +173,6 @@ img {
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
-      background-color: black;
-      color: white;
     }
   }
 }

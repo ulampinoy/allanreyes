@@ -97,8 +97,8 @@ main {
 
       h4 {
         display: block;
-        font-size: 0.4rem;
-        font-family: "Menlo", "Courier New", Courier, monospace;
+        font-size: 0.6rem;
+        color: rgba($color: #ffffff, $alpha: .5);
 
         a {
           color: #777;
@@ -122,7 +122,6 @@ footer {
   color: whitesmoke;
   padding: 1em;
   text-align: center;
-  margin-top: 1rem;
   p {
     font-size: 0.6rem;
     margin: 0;

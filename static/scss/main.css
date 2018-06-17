@@ -209,5 +209,7 @@ img {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    overflow: hidden;
+    max-height: 80vh;
   }
 }

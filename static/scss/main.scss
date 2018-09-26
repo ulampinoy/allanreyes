@@ -23,7 +23,7 @@ h3 {
 
 p {
   font-size: 0.8rem;
-  margin: 0.5rem auto 1rem;
+  margin: 0.5rem auto;
 }
 
 header {
@@ -38,9 +38,9 @@ header {
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 100;
-    line-height: 1.2;
+    line-height: 1.4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@ main {
   margin: 0 auto;
   padding: 2rem;
 
-  section {
+  article {
     margin: 1rem auto;
     order: 1;
   }
@@ -76,17 +76,24 @@ aside {
     margin: 1.5rem 0 0.5rem;
     text-transform: uppercase;
     border-top: 4px solid #eeeeee;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
   h5 {
     font-size: 0.5rem;
     line-height: 1.8;
-    font-weight: 500;
+    font-weight: 700;
   }
   ul,
   p {
     font-size: 0.5em;
     margin-bottom: 1rem;
+  }
+
+  p {
+    &:nth-child {
+      font-size: 0.4rem;
+      color: #444444;
+    }
   }
 
   figure {
@@ -119,7 +126,14 @@ h2 {
 }
 
 h4 {
-  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  color: #999999;
+  margin: 1.5rem 0 1rem;
+  border-top: 6px solid #eeeeee;
+  padding-top: 0.5rem;
 }
 
 a {
@@ -142,8 +156,16 @@ img {
   grid-gap: 4rem;
 }
 
-article {
+section {
+  margin-bottom: 2rem;
+
   h3 {
+    font-size: 1.2rem;
     font-weight: 600;
+  }
+  p:last-child {
+    color: #888888;
+    font-size: .6rem;
+    font-weight: 200;
   }
 }

@@ -2,14 +2,15 @@
 
 html {
   font-size: 1em;
-  font-size: calc(1em + (2.5 - 1) * ((100vw - 18em) / (100 - 18)));
+  font-size: calc(1em + (2.5 - 1.2) * ((100vw - 20em) / (100 - 20)));
 }
 
 body {
-  background-color: #f9f9fa;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
+  color: #202020;
+  background-color: #f9f9fa;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
@@ -17,36 +18,32 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 p {
-  font-size: 0.8rem;
-  margin: 0.5rem auto 1rem;
-}
 
-small {
-  font-size: 0.5rem;
-  color: #777;
 }
 
 header {
-  background-color: #68b900;
-  color: white;
-  padding: 3em;
-  text-align: center;
-
   h1 {
     font-weight: 900;
   }
 
-  h3 {
+  h2 {
+    font-size: 0.8rem;
     text-transform: uppercase;
-    font-size: 0.74rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.2;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem auto;
 
     span {
       font-size: 1.4rem;
@@ -54,65 +51,45 @@ header {
     }
   }
 
-  img {
-    margin: 0 auto;
-    width: 7em;
-  }
-
   &.poster {
-    background-color: black;
-  }
-}
-
-nav {
-  ol {
-    & > li {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-
-      hgroup {
-        padding: 2rem;
-      }
-    }
+    background-color: #101010;
   }
 }
 
 main {
-  &.post {
-    article {
-      section, footer {
-        max-width: 1040px;
-        margin: 0 auto;
-        padding: 1.5rem 3rem;
-      }
-    }
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 
-    header {
-      padding: 0;
+  section {
+    margin: 1rem auto;
+    order: 1;
+  }
+}
 
-      hgroup {
-        padding: 1.5em;
-      }
+aside {
+  h4 {
+    color: #999999;
+    font-size: 0.4rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    text-transform: uppercase;
+    border-top: 4px solid #eeeeee;
+    padding-top: .5rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+  ul,
+  p {
+    margin-bottom: 1rem;
+  }
 
-      h4 {
-        display: block;
-        font-size: 0.6rem;
-        color: rgba($color: #ffffff, $alpha: .5);
-
-        a {
-          color: #777;
-        }
-      }
-
-      img {
-        width: 100%;
-      }
-    }
-
-    footer {
-      background-color: transparent;
-      text-align: left;
+  figure {
+    img {
+      width: 100%;
     }
   }
 }
@@ -122,6 +99,7 @@ footer {
   color: whitesmoke;
   padding: 1em;
   text-align: center;
+
   p {
     font-size: 0.6rem;
     margin: 0;
@@ -156,24 +134,14 @@ img {
   height: auto;
 }
 
-@media screen and (max-width: 60rem) {
-  nav {
-    ol {
-      & > li {
-        grid-template-columns: 1fr;
-      }
-    }
-  }
+.theGrid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 4rem;
 }
 
-@media screen and (min-width: 60rem) {
-  header {
-    &.poster {
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      overflow: hidden;
-      max-height: 80vh;
-    }
+article {
+  h3 {
+    font-weight: 600;
   }
 }

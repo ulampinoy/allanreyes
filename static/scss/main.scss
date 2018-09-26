@@ -12,7 +12,7 @@ body {
   color: #d0d0d0;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-  background-color: #131217;
+  background-color: #15141a;
 }
 
 h1,
@@ -39,7 +39,7 @@ h4 {
   font-weight: 600;
   letter-spacing: 0.08rem;
   color: rgba(#908dc0, 0.5);
-  margin: 1.5rem 0 1rem;
+  margin: 3rem 0 .5rem;
   border-top: 4px solid rgba(#908dc0, 0.1);
   padding-top: 0.5rem;
 }
@@ -113,7 +113,7 @@ main {
 aside {
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.7rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -138,21 +138,21 @@ aside {
   }
 
   h5 {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.6rem;
     font-weight: 600;
-    margin: 1rem 0 0.5rem;
+    margin: .5rem 0 0;
   }
 
   ul {
-    margin: 0;
+    margin: 0 0 1rem;
     li {
-      margin: 0.3rem 0;
+      margin: 0.2rem 0;
     }
   }
 
   p {
-    margin-bottom: 1rem;
+    margin: .2rem 0 1rem;
 
     &:nth-child {
       font-size: 0.4rem;
@@ -170,11 +170,15 @@ aside {
       }
     }
   }
+  a {
+    color: rgba(#146ca7, 0.7);
+    font-weight: 400;
+  }
 }
 
 footer {
-  background-color: rgb(0, 17, 18);
-  color: whitesmoke;
+  background-color: #121116;
+  color: rgba(255, 255, 255, 0.4);
   padding: 1em;
   text-align: center;
 

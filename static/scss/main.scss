@@ -2,7 +2,7 @@
 
 html {
   font-size: 1em;
-  font-size: calc(1em + (2.5 - 1.2) * ((100vw - 20em) / (100 - 20)));
+  font-size: calc(1em + (2.5 - 1.5) * ((100vw - 18em) / (100 - 18)));
 }
 
 body {
@@ -21,14 +21,44 @@ h3 {
   line-height: 1.6;
 }
 
-p {
-  font-size: 0.8rem;
-  margin: 0.5rem auto;
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  color: #999999;
+  margin: 1.5rem 0 1rem;
+  border-top: 6px solid #eeeeee;
+  padding-top: 0.5rem;
+}
+
+a {
+  color: #444444;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #68b900;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 header {
   h1 {
     font-weight: 900;
+    white-space: nowrap;
   }
 
   h2 {
@@ -38,12 +68,10 @@ header {
   }
 
   h3 {
-    font-size: .8rem;
+    color: #444444;
     font-weight: 100;
     line-height: 1.4;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 1rem auto;
 
     span {
@@ -60,36 +88,58 @@ header {
 main {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 
   article {
-    margin: 1rem auto;
-    order: 1;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 540px) {
+      order: 1;
+    }
   }
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  border-top: 1px solid #e0e0e0;
+
+  @media only screen and (min-width: 540px) {
+    display: block;
+    border-top: none;
+    font-size: 0.5rem;
+  }
+
   h4 {
     color: #999999;
-    font-size: 0.4rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.5rem;
-    text-transform: uppercase;
-    border-top: 4px solid #eeeeee;
-    padding-top: 0.5rem;
-  }
-  h5 {
-    font-size: 0.5rem;
-    line-height: 1.8;
     font-weight: 700;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    border-top: none;
+    padding-top: 0.5rem;
+    white-space: nowrap;
+
+    @media only screen and (min-width: 540px) {
+      border-top: 4px solid #eeeeee;
+      font-size: 0.5rem;
+    }
   }
-  ul,
-  p {
-    font-size: 0.5em;
-    margin-bottom: 1rem;
+
+  h5 {
+    font-weight: 700;
+    margin: 1rem 0 .2rem;
+  }
+
+  ul {
+    margin: 0;
+    li {
+      margin: 0.1rem 0;
+    }
   }
 
   p {
+    margin-bottom: 1rem;
+
     &:nth-child {
       font-size: 0.4rem;
       color: #444444;
@@ -97,8 +147,13 @@ aside {
   }
 
   figure {
+    order: 1;
     img {
-      width: 100%;
+      margin: 1rem auto;
+      @media only screen and (min-width: 540px) {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -115,57 +170,47 @@ footer {
   }
 }
 
-h1 {
-  font-size: 2.7rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-h2 {
-  font-size: 1.4em;
-}
-
-h4 {
-  text-transform: uppercase;
-  font-size: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.08rem;
-  color: #999999;
-  margin: 1.5rem 0 1rem;
-  border-top: 6px solid #eeeeee;
-  padding-top: 0.5rem;
-}
-
-a {
-  color: #444444;
-  font-weight: 600;
-}
-
-a:hover {
-  color: #68b900;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .theGrid {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 1rem;
+
+  @media only screen and (min-width: 540px) {
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 3rem;
+    padding: 2rem;
+  }
+}
+
+article {
+  h4 {
+    font-size: 0.6rem;
+  }
+  p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin: 0.5rem auto;
+  }
 }
 
 section {
-  margin-bottom: 2rem;
+  color: #303030;
+  margin-top: 2rem;
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    line-height: 1.2;
   }
+
   p:last-child {
     color: #888888;
-    font-size: .6rem;
+    font-size: 0.6rem;
     font-weight: 200;
+
+    a {
+      font-weight: 400;
+    }
   }
 }

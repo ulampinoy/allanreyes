@@ -60,7 +60,6 @@ img {
 }
 
 header {
-  visibility: visible;
 
   h1 {
     color: white;
@@ -141,7 +140,7 @@ aside {
   h5 {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.6rem;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0.6rem 0 0.4rem;
   }
 
@@ -189,7 +188,7 @@ footer {
   }
 }
 
-.theGrid {
+.Grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;

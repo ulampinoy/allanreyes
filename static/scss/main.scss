@@ -38,7 +38,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.08rem;
-  color: rgba(#908dc0, 0.5);
+  color: rgba(#908dc0, 0.6);
   margin: 3rem 0 0.5rem;
   border-top: 4px solid rgba(#908dc0, 0.1);
   padding-top: 0.5rem;
@@ -113,7 +113,7 @@ main {
 aside {
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 0.7rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -138,7 +138,7 @@ aside {
   }
 
   h5 {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.6rem;
     font-weight: 500;
     margin: 0.6rem 0 0.4rem;
@@ -207,7 +207,7 @@ article {
   }
 
   p {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.8rem;
     letter-spacing: 0.01rem;
     margin: 0.5rem auto;
@@ -224,7 +224,7 @@ section {
   }
 
   p:last-child {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.6rem;
     font-weight: 200;
     &::before {

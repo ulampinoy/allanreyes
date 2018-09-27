@@ -224,14 +224,14 @@ section {
   }
 
   p:last-child {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.6rem;
     font-weight: 200;
     &::before {
       content: "";
       display: block;
       margin: 1rem 0 .5rem;
-      width: 1.8rem;
+      width: 1.4rem;
       height: 0.05rem;
       background-color: currentColor;
     }

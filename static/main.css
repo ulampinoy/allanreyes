@@ -175,7 +175,7 @@ header h3 span {
 }
 
 main {
-  border: 2rem double rgba(102, 85, 255, 0.04);
+  border: 3rem double rgba(0, 0, 0, 0.1);
 }
 
 main article {
@@ -305,8 +305,8 @@ footer p {
   .Grid {
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
-    grid-gap: 3rem;
-    padding: 3rem;
+    grid-gap: 4rem;
+    padding: 4rem;
   }
 }
 

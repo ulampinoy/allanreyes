@@ -131,6 +131,7 @@ img {
 
 .garamond {
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
 }
 
 header h1 {
@@ -332,6 +333,7 @@ section h3 {
 section p:last-child {
   color: rgba(255, 255, 255, 0.45);
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
   font-size: 0.6rem;
   font-weight: 200;
 }

@@ -1,1 +1,345 @@
-/* line 6, static/scss/_reset.scss */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}/* line 27, static/scss/_reset.scss */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}/* line 32, static/scss/_reset.scss */body{line-height:1}/* line 35, static/scss/_reset.scss */ol,ul{list-style:none}/* line 38, static/scss/_reset.scss */blockquote,q{quotes:none}/* line 41, static/scss/_reset.scss */blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}/* line 46, static/scss/_reset.scss */table{border-collapse:collapse;border-spacing:0}/* line 3, static/scss/main.scss */html{font-size:1em;font-size:calc(1em + (2.5 - 1.5) * ((100vw - 18em) / (100 - 18)))}/* line 8, static/scss/main.scss */body{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;font-weight:300;color:#d0d0d0;line-height:1.5;text-rendering:optimizeLegibility;background-color:#15141a}/* line 18, static/scss/main.scss */h1,h2,h3{line-height:1.6}/* line 24, static/scss/main.scss */h1{font-size:2.7rem;font-weight:700}/* line 29, static/scss/main.scss */h2{font-size:1.4em}/* line 33, static/scss/main.scss */h3{font-size:1.2em}/* line 37, static/scss/main.scss */h4{text-transform:uppercase;font-weight:600;letter-spacing:0.08rem;color:rgba(144,141,192,0.6);margin:3rem 0 0.5rem;border-top:4px solid rgba(144,141,192,0.15);padding-top:0.5rem}/* line 47, static/scss/main.scss */a{color:rgba(0,143,238,0.8);font-weight:600;text-decoration:none}/* line 53, static/scss/main.scss */a:hover{color:#0099ff}/* line 57, static/scss/main.scss */img{max-width:100%;height:auto}/* line 64, static/scss/main.scss */header h1{color:white;font-weight:900;white-space:nowrap}/* line 70, static/scss/main.scss */header h2{color:rgba(102,85,255,0.6);font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1rem;display:flex;align-items:center}/* line 79, static/scss/main.scss */header h2 span{color:rgba(102,85,255,0.4);font-size:1.4rem;font-weight:200;margin:0 0.3rem}/* line 87, static/scss/main.scss */header h3{line-height:1.4;margin:1.5rem auto 2rem;color:rgba(255,255,255,0.5);letter-spacing:-0.003em;font-weight:200}/* line 94, static/scss/main.scss */header h3 span{color:#e0e0e0;font-weight:700}/* line 101, static/scss/main.scss */main{max-width:1280px;margin:0 auto}/* line 105, static/scss/main.scss */main article{margin:0 auto}@media only screen and (min-width: 640px){/* line 105, static/scss/main.scss */main article{order:1}}/* line 114, static/scss/main.scss */aside{display:flex;flex-direction:column;color:rgba(255,255,255,0.6);font-size:0.7rem;border-top:1px solid rgba(255,255,255,0.2)}@media only screen and (min-width: 640px){/* line 114, static/scss/main.scss */aside{display:block;border-top:none;font-size:0.5rem}}/* line 127, static/scss/main.scss */aside h4{font-weight:700;margin-top:1.5rem;text-transform:uppercase;border-top:none;padding-top:0.5rem;white-space:nowrap}@media only screen and (min-width: 640px){/* line 127, static/scss/main.scss */aside h4{border-top:2px solid rgba(144,141,192,0.15);font-size:0.5rem}}/* line 141, static/scss/main.scss */aside h5{color:rgba(255,255,255,0.8);font-size:0.6rem;font-weight:500;margin:0.6rem 0 0.4rem}/* line 148, static/scss/main.scss */aside ul{margin:0 0 1rem}/* line 150, static/scss/main.scss */aside ul li{margin:0.2rem 0}/* line 155, static/scss/main.scss */aside p{margin:0.2rem 0 1rem}/* line 158, static/scss/main.scss */aside p:nth-child{font-size:0.4rem}/* line 163, static/scss/main.scss */aside figure{order:1}/* line 165, static/scss/main.scss */aside figure img{margin:1rem auto;opacity:0.3}@media only screen and (min-width: 640px){/* line 165, static/scss/main.scss */aside figure img{width:100%;margin:0 auto}}/* line 174, static/scss/main.scss */aside a{color:rgba(255,255,255,0.8);font-weight:400}/* line 180, static/scss/main.scss */footer{background-color:#121116;color:rgba(255,255,255,0.4);padding:1em;text-align:center}/* line 186, static/scss/main.scss */footer p{font-size:0.6rem;margin:0}/* line 192, static/scss/main.scss */.Grid{display:grid;grid-template-columns:1fr;grid-gap:2rem;padding:2rem}@media only screen and (min-width: 640px){/* line 192, static/scss/main.scss */.Grid{grid-template-columns:1fr 3fr;grid-gap:3rem;padding:3rem}}/* line 206, static/scss/main.scss */article h4{font-size:0.6rem}/* line 210, static/scss/main.scss */article p{color:rgba(255,255,255,0.7);font-size:0.8rem;letter-spacing:0.01rem;margin:0.5rem auto}/* line 218, static/scss/main.scss */section{margin-top:2rem}/* line 221, static/scss/main.scss */section h3{font-size:1.4rem;font-weight:600;line-height:1.2}/* line 227, static/scss/main.scss */section p:last-child{color:rgba(255,255,255,0.5);font-size:0.6rem;font-weight:200}/* line 231, static/scss/main.scss */section p:last-child::before{content:"";display:block;margin:1rem 0 .5rem;width:1.4rem;height:0.02rem;background-color:rgba(255,255,255,0.3)}/* line 240, static/scss/main.scss */section p:last-child a{font-weight:400}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 1em;
+  font-size: calc(1em + (2.5 - 1.5) * ((100vw - 18em) / (100 - 18)));
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #d0d0d0;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  background-color: #15141a;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  color: rgba(144, 141, 192, 0.6);
+  margin: 3rem 0 0.5rem;
+  border-top: 4px solid rgba(144, 141, 192, 0.15);
+  padding-top: 0.5rem;
+}
+
+a {
+  color: rgba(0, 143, 238, 0.8);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.outbound {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a.outbound:hover svg {
+  opacity: .5;
+}
+
+a.outbound svg {
+  padding-top: .25rem;
+  padding-left: .25rem;
+  opacity: 0;
+}
+
+a:hover {
+  color: #0099ff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.garamond {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+header h1 {
+  color: white;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+header h2 {
+  color: rgba(102, 85, 255, 0.6);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h2 span {
+  color: rgba(102, 85, 255, 0.4);
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin: 0 0.3rem;
+}
+
+header h3 {
+  line-height: 1.4;
+  margin: 1.5rem auto 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: -0.003em;
+  font-weight: 200;
+}
+
+header h3 span {
+  color: #e0e0e0;
+  font-weight: 700;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main article {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 640px) {
+  main article {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.64rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (min-width: 640px) {
+  aside {
+    display: block;
+    border-top: none;
+    font-size: 0.5rem;
+  }
+}
+
+aside h4 {
+  font-weight: 700;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  border-top: none;
+  padding-top: 0.5rem;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 640px) {
+  aside h4 {
+    border-top: 2px solid rgba(144, 141, 192, 0.15);
+    font-size: 0.5rem;
+  }
+}
+
+aside h5 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin: 0.6rem 0 0.4rem;
+}
+
+aside ul {
+  margin: 0 0 1rem;
+}
+
+aside ul li {
+  margin: 0.2rem 0;
+}
+
+aside p {
+  margin: 0.2rem 0 1rem;
+}
+
+aside p:nth-child {
+  font-size: 0.4rem;
+}
+
+aside figure {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+aside figure img {
+  margin: 1rem auto;
+  opacity: 0.3;
+}
+
+@media only screen and (min-width: 640px) {
+  aside figure img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+aside a {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+footer {
+  background-color: rgba(102, 85, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
+  padding: 1em;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.Grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .Grid {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    grid-gap: 3rem;
+    padding: 3rem;
+  }
+}
+
+article h4 {
+  font-size: 0.6rem;
+}
+
+article p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  letter-spacing: 0.01rem;
+  margin: 0.5rem auto;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+section p:last-child {
+  color: rgba(255, 255, 255, 0.45);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.6rem;
+  font-weight: 200;
+}
+
+section p:last-child::before {
+  content: "";
+  display: block;
+  margin: 1rem 0 .5rem;
+  width: 1.4rem;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+section p:last-child a {
+  font-weight: 400;
+}

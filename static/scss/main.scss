@@ -48,6 +48,23 @@ a {
   color: rgba(#008fee, 0.8);
   font-weight: 600;
   text-decoration: none;
+
+  &.outbound {
+    display: inline-flex;
+    justify-content: space-between;
+
+    &:hover {
+      svg {
+        opacity: .5;
+      }
+    }
+
+    svg {
+      padding-top: .25rem;
+      padding-left: .25rem;
+      opacity: 0;
+    }
+  }
 }
 
 a:hover {
@@ -57,6 +74,10 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.garamond {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 header {
@@ -114,8 +135,8 @@ main {
 aside {
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.64rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 
   @media only screen and (min-width: 640px) {
@@ -139,7 +160,7 @@ aside {
   }
 
   h5 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.6rem;
     font-weight: 500;
     margin: 0.6rem 0 0.4rem;
@@ -172,13 +193,13 @@ aside {
     }
   }
   a {
-    color: rgba(#ffffff, 0.8);
+    color: rgba(#ffffff, 0.6);
     font-weight: 400;
   }
 }
 
 footer {
-  background-color: #121116;
+  background-color: rgba(102, 85, 255, 0.6);
   color: rgba(255, 255, 255, 0.4);
   padding: 1em;
   text-align: center;
@@ -225,7 +246,8 @@ section {
   }
 
   p:last-child {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.45);
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.6rem;
     font-weight: 200;
     &::before {
@@ -234,7 +256,7 @@ section {
       margin: 1rem 0 .5rem;
       width: 1.4rem;
       height: 1px;
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.25);
     }
 
     a {

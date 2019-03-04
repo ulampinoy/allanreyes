@@ -133,6 +133,7 @@ img {
 
 .garamond {
   font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -338,6 +339,7 @@ section h3 {
 section p:last-child {
   color: rgba(255, 255, 255, 0.45);
   font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
   font-style: italic;
   font-size: 0.65rem;
 }
@@ -353,4 +355,53 @@ section p:last-child::before {
 
 section p:last-child a {
   font-weight: 400;
+}
+
+@media only print {
+  @page {
+    size: A4;
+  }
+  body {
+    background-color: white;
+    color: black;
+    overflow: visible;
+  }
+  figure img {
+    display: block;
+  }
+  .Grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 7em 1fr;
+        grid-template-columns: 7em 1fr;
+  }
+  main article {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  span,
+  article p {
+    color: black;
+  }
+  section p:last-child {
+    color: #333333;
+  }
+  header h2,
+  header h2 span,
+  header h3,
+  header h3 span {
+    color: #333333;
+  }
+  aside h4,
+  aside h5,
+  aside p,
+  aside ul {
+    color: black;
+  }
 }

@@ -83,7 +83,7 @@ img {
 header {
 
   h1 {
-    color: white;
+    color: darkgoldenrod;
     font-weight: 900;
     white-space: nowrap;
   }
@@ -113,7 +113,7 @@ header {
     font-weight: 200;
 
     span {
-      color: #e0e0e0;
+      color: darkgoldenrod;
       font-weight: 700;
     }
   }
@@ -160,9 +160,9 @@ aside {
   }
 
   h5 {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.6rem;
-    font-weight: 500;
+    color: darkgoldenrod;
+    font-size: 0.5rem;
+    font-weight: 600;
     margin: 0.6rem 0 0.4rem;
   }
 
@@ -178,6 +178,11 @@ aside {
 
     &:nth-child {
       font-size: 0.4rem;
+    }
+
+    &.copyright {
+      color: darkgoldenrod;
+      font-size: .4rem;
     }
   }
 

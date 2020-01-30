@@ -80,7 +80,6 @@ img {
 
 .garamond {
   font-family: "Cormorant Garamond", serif;
-  font-size: .6rem;
   font-weight: 500;
   font-style: italic;
 }
@@ -112,7 +111,7 @@ header {
   h3 {
     line-height: 1.4;
     margin: 1.5rem auto 2rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
     letter-spacing: -0.003em;
     font-weight: 200;
 
@@ -140,7 +139,7 @@ main {
 aside {
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.64rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 
@@ -175,11 +174,6 @@ aside {
     margin: 0 0 1rem;
     li {
       margin: 0.2rem 0;
-
-      a {
-        color: rgba(255, 255, 255, 0.7);
-        font-weight: 500;
-      }
     }
   }
 
@@ -192,12 +186,7 @@ aside {
 
     &.copyright {
       color: darkgoldenrod;
-      font-size: 0.5rem;
-
-      a {
-        color: darkgoldenrod;
-        font-weight: 500;
-      }
+      font-size: 0.4rem;
     }
   }
 
@@ -251,7 +240,7 @@ article {
   }
 
   p {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.8rem;
     letter-spacing: 0.01rem;
     margin: 0.5rem auto;
@@ -268,11 +257,11 @@ section {
   }
 
   p:last-child {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.45);
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     &::before {
       content: "";
       display: block;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Allan Reyes — Designer and Enthusiast</title>
+    <link>https://allanrey.es/posts/</link>
+    <description>Recent content in Posts on Allan Reyes — Designer and Enthusiast</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Mar 2018 09:47:10 +0200</lastBuildDate>
+    
+	<atom:link href="https://allanrey.es/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hi there!</title>
+      <link>https://allanrey.es/posts/hello/</link>
+      <pubDate>Fri, 30 Mar 2018 09:47:10 +0200</pubDate>
+      
+      <guid>https://allanrey.es/posts/hello/</guid>
+      <description>Thanks for dropping by my site. It is currently going under a total revamp, so please bear with me for all the rough edges here and there.
+But no more excuses. It has been long been overdued. Previously, I am very reluctant and fearful to the idea of releasing something that is not pixel-perfect. I now know better, unicorn is a myth and pixel-perfect is a unicorn.
+I will rebuild it with a renewed zeal.</description>
+    </item>
+    
+  </channel>
+</rss>
